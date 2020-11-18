@@ -214,6 +214,7 @@ local function initLibrary()
                         Size = UDim2.new(0, 70, 0, 24);
                         TextColor3 = Color3.fromRGB(255, 255, 255);
                         Text = HotNewName;
+                        TextWrapped = true;
                         Font = "GothamSemibold";
                         TextSize = 14;
                         library:Create("UIGradient", {
