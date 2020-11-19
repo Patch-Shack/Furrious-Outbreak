@@ -8,6 +8,7 @@ local function initLibrary()
     local TweenService = GetService(game, "TweenService");
     local UserInputService = GetService(game, "UserInputService");
     local HotNewName = ("Fur");
+    local CoreNewName = ("FurOut");
 
     local LocalPlayer = Players.LocalPlayer;
 
@@ -109,6 +110,7 @@ local function initLibrary()
         end);
 
         local gui = Instance.new("ScreenGui", CoreGui);
+        gui.Name = CoreNewName;
         gui.Enabled = false;
         library.gui = gui;
 
