@@ -27,8 +27,16 @@ Misc:Button("Reset", function()
 	game.Players.LocalPlayer.Character:BreakJoints()
 end)
 
+Misc:Button("Infinite Yield", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/i4gJFss1'),true))();
+end)
+
 Misc:Button("16 WalkSpeed (Default)", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Misc:Button("32 WalkSpeed", function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
 end)
 
 Misc:Button("50 WalkSpeed", function()
@@ -39,9 +47,13 @@ Misc:Button("100 WalkSpeed", function()
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 end)
 
+Misc:Button("200 WalkSpeed", function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+end)
+
 library:Ready()
 
-local Ped = game.CoreGui:WaitForChild("ScreenGui")
+local Ped = game.CoreGui:WaitForChild("FurOut")
 
 game:GetService("UserInputService").InputBegan:Connect(function(Key,IsChat)
 	if IsChat then return end
